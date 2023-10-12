@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/c056c12f2e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div id="header">
+        <div class="container">
+            <nav>
+               <div class="logo"><h1>portfolio</h1></div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="https://prjet-mayhem.000webhostapp.com/">Blog</a></li>
+                    <li><a href="#">project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  <div class="fa"><i class="fa-solid fa-xmark" onclick="closemenu()"></i></div>  
+                </ul>
+                <div class="fas "><i class="fa-solid fa-bars" onclick="openmenu()"></i></div>
+               
+            </nav>
+            <div class="header-text">
+                <p>Hi, I'm</p>
+                  <div class="typed-out"> <h1> <span style="color: green;">EdWin</span> A Web DeVelOper</h1></div>
+                </div>
+
+                <div class="header-text1">
+                    <p>Hi, I'm</p>
+                      <div class="typed-out1"> <h1> <span style="color: green;">EdWin</span> A Web<br> DeVelOper</h1></div>
+                    </div>
+        </div>
+      
+    </div>
+   
+    <!-----------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="people doing bible study.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Design Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Build and design web pages</li>
+                            <li><span>App Development</span><br>Build Android apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Currently</span><br>Fresher</li>
+                            <li><span></span><br></li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Computer Science</li>
+                            <li><span>2023</span><br>BCA</li>
+                            <li><span></span><br></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------services-------------------------- --->
+
+    <div id="services">
+        <div class="container"></div>
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div style="margin-top: 20px;">
+              <img src="web-page-material-svgrepo-com.svg" alt="" style="width: 20%; ">
+                <h2>web development</h2>
+                <p>Build and design User Friendly web pages</p>
+                <a href="#">learn more</a>
+            </div>
+            <div style="margin-top: 20px;">
+                <i class="fa-brands fa-sketch" style="color: rgb(0, 0, 0);"></i>
+                <h2>UI/UX</h2>
+                <p>Design Web/App Interfaces</p>
+                <a href="#">learn more</a>
+            </div>
+            <div  style="margin-top: 20px;">
+                <i class="fa-brands fa-app-store-ios" style="color: rgb(0, 0, 0);"></i>
+                <h2>App Development</h2>
+                <p>Build Creative Android apps</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+
+    </div>
+    <!------------contact-------------------------- --->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+<p> <i class="fa-solid fa-square-phone"></i>edwinthomas4110@gmail.com</p>
+<p><i class="fa-solid fa-square-phone"></i>+91 8430581431</p>
+<div class="social-icons">
+    <a href="https://www.facebook.com/edwin.thomas.1800721?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://instagram.com/_k_u_d_u_?igshid=ZDc4ODBmNjlmNQ=="><i class="fa-brands fa-square-instagram"></i></a>
+
+    <a href="https://twitter.com/EDWINTHOMA66351?t=Mwupk8RS46jUgpBA1XOQHg&s=09"><i class="fa-brands fa-twitter"></i></a>
+  
+    <a href="#"><i class="fa-brands fa-github"></i></a>
+</div>
+<a href="" download="thomas bill3-4.pdf" class="btn btn2">Download CV</a>
+                </div>
+                
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"  ></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="coppyright">
+            <p>@ 2023 Portfolio <i class="fa-regular fa-heart"></i> ,All rights reserved </p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+
+                tabcontent.classList.remove("active-tab");
+
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+<script>
+
+
+var sidemenu = document.getElementById("sidemenu");
+function openmenu(){
+    sidemenu.style.right = "0";
+}
+
+function closemenu(){
+    sidemenu.style.right = "-200px";
+}
+
+
+</script>
+
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzw5gf8l9GN1qVc4dSyp3UDl-jk63puYt6h2DzcOFSeJ09WYOcByUHSA1bD0mkLAfG6tw/exec'
+    const form = document.forms['submit-to-google-sheet']
+  constmsg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "message sent sucessfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+</body>
+
+</html>
