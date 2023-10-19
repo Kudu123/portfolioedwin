@@ -1,26 +1,28 @@
-let speech = new SpeechSynthesisUtterance();
 
-let
+        let speech = new SpeechSynthesisUtterance();
+        let voices = [];
+        let voiceSelect = document.querySelector("select");
 
-voices = [];
+        function populateVoiceList() {
+            voices = window.speechSynthesis.getVoices();
+            voiceSelect.innerHTML = '';
 
-let voiceSelect = document.querySelector("select");
+            voices.forEach((voice, i) => {
+                voiceSelect.options[i] = new Option(voice.name, i);
+            });
+        }
 
-window.speechSynthesis.onvoiceschanged = () => {
+        window.speechSynthesis.onvoiceschanged = populateVoiceList;
 
-voices = window.speechSynthesis.getVoices();
- speech.voice = voices[2];
+        voiceSelect.addEventListener("change", () => {
+            speech.voice = voices[voiceSelect.value];
+        });
 
-voices.forEach((voice, i) => (voiceSelect.options[i] = new Option(voice.name ,
+        document.querySelector("button").addEventListener("click", () => {
+            speech.text = document.querySelector("textarea").value;
+            window.speechSynthesis.speak(speech);
+        });
 
-i)));
-};
-voiceSelect.addEventListener("change",() =>{
-    speech.voice = voices[voiceSelect.value];
-});
-
-
-document.querySelector("button").addEventListener("click",() =>{
-    speech.text = document.querySelector("textarea").value;
-window.speechSynthesis.speak(speech);
-});
+        // Initialize the voice list
+        populateVoiceList();
+ 
